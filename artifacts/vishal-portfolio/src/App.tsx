@@ -512,7 +512,19 @@ function ProjectArt({ kind, className = '' }: { kind: string; className?: string
 function PublicHeader() {
   return <header className="site-header"><div className="site-header-inner">
     <Link href="/admin/login" className="admin-link" data-testid="link-admin">Admin</Link>
-    <Link href="/" className="brand-mark" data-testid="link-home">Vishal.</Link>
+    <Link
+  href="/"
+  className="brand-mark"
+  data-testid="link-home"
+  onClick={() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }}
+>
+  Vishal.
+</Link>
     <nav className="header-nav" aria-label="Primary navigation">
       <a href="/#work" data-testid="link-work">Work</a><a href="/#about" data-testid="link-about">About</a><a href="#resume" data-testid="link-resume">Resume</a><a href="/#contact" data-testid="link-contact">Contact</a>
     </nav>
