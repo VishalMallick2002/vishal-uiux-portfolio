@@ -222,59 +222,249 @@ function usePortfolio() {
 
 function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
-  const target = useRef({ x: -100, y: -100 });
-  const position = useRef({ x: -100, y: -100 });
+
+  const target = useRef({
+    x: -100,
+    y: -100,
+  });
+
+  const position = useRef({
+    x: -100,
+    y: -100,
+  });
+
   const frame = useRef<number | null>(null);
+  const isVisible = useRef(false);
 
   useEffect(() => {
-    const supportsMouse = window.matchMedia('(pointer: fine) and (hover: hover)').matches;
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const supportsMouse = window.matchMedia(
+      '(pointer: fine) and (hover: hover)'
+    ).matches;
+
+    const prefersReducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    ).matches;
+
     if (!supportsMouse || prefersReducedMotion) return;
 
-    document.documentElement.classList.add('custom-cursor-active');
+    const cursor = cursorRef.current;
+
+    if (!cursor) return;
+
+    document.documentElement.classList.add(
+      'custom-cursor-active'
+    );
+
+    const hideCursor = () => {
+      isVisible.current = false;
+      cursor.style.opacity = '0';
+    };
+
+    const showCursor = () => {
+      isVisible.current = true;
+      cursor.style.opacity = '1';
+    };
+
+    const resetCursor = () => {
+      target.current = {
+        x: -100,
+        y: -100,
+      };
+
+      position.current = {
+        x: -100,
+        y: -100,
+      };
+
+      cursor.style.transform =
+        'translate3d(-100px, -100px, 0) translate(-50%, -50%)';
+
+      hideCursor();
+    };
 
     const animate = () => {
-      const dx = target.current.x - position.current.x;
-      const dy = target.current.y - position.current.y;
+      const dx =
+        target.current.x - position.current.x;
+
+      const dy =
+        target.current.y - position.current.y;
+
       position.current.x += dx * 0.22;
       position.current.y += dy * 0.22;
-      if (cursorRef.current) {
-        cursorRef.current.style.transform = `translate3d(${position.current.x}px, ${position.current.y}px, 0) translate(-50%, -50%)`;
+
+      cursor.style.transform =
+        `translate3d(${position.current.x}px, ${position.current.y}px, 0) translate(-50%, -50%)`;
+
+      frame.current =
+        requestAnimationFrame(animate);
+    };
+
+    const restartAnimation = () => {
+      if (frame.current !== null) {
+        cancelAnimationFrame(frame.current);
       }
-      if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
-        frame.current = requestAnimationFrame(animate);
+
+      frame.current =
+        requestAnimationFrame(animate);
+    };
+
+    const onMove = (event: PointerEvent) => {
+      target.current = {
+        x: event.clientX,
+        y: event.clientY,
+      };
+
+      // When mouse comes back into the page,
+      // immediately sync position once.
+      if (!isVisible.current) {
+        position.current = {
+          x: event.clientX,
+          y: event.clientY,
+        };
+
+        cursor.style.transform =
+          `translate3d(${event.clientX}px, ${event.clientY}px, 0) translate(-50%, -50%)`;
+      }
+
+      showCursor();
+
+      const element =
+        event.target instanceof Element
+          ? event.target
+          : null;
+
+      cursor.classList.toggle(
+        'is-hovering',
+        Boolean(
+          element?.closest(
+            'a, button, [role="button"]'
+          )
+        )
+      );
+
+      cursor.classList.toggle(
+        'is-project',
+        Boolean(
+          element?.closest(
+            '.project-card, .project-art'
+          )
+        )
+      );
+
+      cursor.classList.toggle(
+        'is-dark',
+        Boolean(
+          element?.closest('.contact-section')
+        )
+      );
+    };
+
+    const onLeave = () => {
+      hideCursor();
+
+      cursor.classList.remove(
+        'is-hovering',
+        'is-project',
+        'is-dark'
+      );
+    };
+
+    const onWindowBlur = () => {
+      hideCursor();
+    };
+
+    const onWindowFocus = () => {
+      resetCursor();
+      restartAnimation();
+    };
+
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        hideCursor();
       } else {
+        resetCursor();
+        restartAnimation();
+      }
+    };
+
+    window.addEventListener(
+      'pointermove',
+      onMove,
+      { passive: true }
+    );
+
+    document.documentElement.addEventListener(
+      'pointerleave',
+      onLeave
+    );
+
+    window.addEventListener(
+      'blur',
+      onWindowBlur
+    );
+
+    window.addEventListener(
+      'focus',
+      onWindowFocus
+    );
+
+    document.addEventListener(
+      'visibilitychange',
+      onVisibilityChange
+    );
+
+    restartAnimation();
+
+    return () => {
+      document.documentElement.classList.remove(
+        'custom-cursor-active'
+      );
+
+      window.removeEventListener(
+        'pointermove',
+        onMove
+      );
+
+      document.documentElement.removeEventListener(
+        'pointerleave',
+        onLeave
+      );
+
+      window.removeEventListener(
+        'blur',
+        onWindowBlur
+      );
+
+      window.removeEventListener(
+        'focus',
+        onWindowFocus
+      );
+
+      document.removeEventListener(
+        'visibilitychange',
+        onVisibilityChange
+      );
+
+      if (frame.current !== null) {
+        cancelAnimationFrame(frame.current);
         frame.current = null;
       }
     };
-
-    const onMove = (event: MouseEvent) => {
-      target.current = { x: event.clientX, y: event.clientY };
-      const element = event.target instanceof Element ? event.target : null;
-      cursorRef.current?.classList.toggle('is-hovering', Boolean(element?.closest('a, button, [role="button"]')));
-      cursorRef.current?.classList.toggle('is-project', Boolean(element?.closest('.project-card, .project-art')));
-      cursorRef.current?.classList.toggle('is-dark', Boolean(element?.closest('.contact-section')));
-      if (frame.current === null) frame.current = requestAnimationFrame(animate);
-    };
-
-    const onLeave = () => cursorRef.current?.classList.remove('is-hovering', 'is-project', 'is-dark');
-
-    document.addEventListener('mousemove', onMove);
-    document.addEventListener('mouseleave', onLeave);
-    return () => {
-      document.documentElement.classList.remove('custom-cursor-active');
-      document.removeEventListener('mousemove', onMove);
-      document.removeEventListener('mouseleave', onLeave);
-      if (frame.current !== null) cancelAnimationFrame(frame.current);
-    };
   }, []);
 
-  return <div ref={cursorRef} className="custom-cursor" aria-hidden="true">
-    <span className="cursor-center" />
-    <span className="cursor-dot cursor-dot-one" />
-    <span className="cursor-dot cursor-dot-two" />
-    <span className="cursor-dot cursor-dot-three" />
-  </div>;
+  return (
+    <div
+      ref={cursorRef}
+      className="custom-cursor"
+      aria-hidden="true"
+      style={{ opacity: 0 }}
+    >
+      <span className="cursor-center" />
+      <span className="cursor-dot cursor-dot-one" />
+      <span className="cursor-dot cursor-dot-two" />
+      <span className="cursor-dot cursor-dot-three" />
+    </div>
+  );
 }
 
 function ProjectArt({ kind, className = '' }: { kind: string; className?: string }) {
@@ -388,8 +578,18 @@ function Home() {
       </div></section>
       <section id="about" className="section-rule"><div className="section-inner"><div className="about-grid"><div><div className="eyebrow"><b>About</b></div><div className="about-side-note">A little about me</div></div><div><div className="about-copy"><p className="about-intro">I’m Vishal, a UI/UX designer who enjoys turning ideas and everyday problems into simple, user-friendly digital experiences.</p><p>My process usually starts with understanding the requirement, organizing the user flow, and creating wireframes before developing the final interface and prototype.</p><p>I enjoy learning new approaches, exploring design ideas, and improving my work through feedback and iteration.</p></div><div className="about-detail-grid"><div><div className="detail-label">Skills</div><div className="detail-list">{['UI Design','User Flows','Wireframing','Prototyping','UX Research','Usability Testing','Responsive Design','Design Thinking'].map((skill) => <span key={skill}>{skill}</span>)}</div></div><div><div className="detail-label">Tools</div><div className="detail-list"><span>Figma</span><span>Whimsical</span><span>FigJam</span></div></div></div></div></div></div></section>
       <section className="section-rule"><div className="section-inner"><div className="section-kicker"><h2 className="section-title">How I work</h2><span className="section-index">A simple process</span></div><div className="process-grid">{[['01','Understand','Understand the project requirement, purpose, and expected user journey.'],['02','Structure','Organize ideas, user flows, and screen structure.'],['03','Design','Create wireframes and develop the visual interface.'],['04','Prototype & Refine','Build interactions, review the experience, and improve the design through feedback.']].map(([num,title,text]) => <div className="process-item" key={num}><div className="process-num">{num}</div><h3>{title}</h3><p>{text}</p></div>)}</div></div></section>
-      <section id="contact" className="contact-section"><div className="section-inner"><div className="contact-layout"><div><div className="eyebrow" style={{ color: 'hsl(var(--background) / .55)' }}>Available for good conversations</div><h2 className="contact-title">Let’s <em>connect.</em></h2></div><div className="contact-copy">I’m open to UI/UX opportunities, collaborations, and conversations about design.<div className="contact-links"><a href="mailto:vishal.design@example.com">Email ↗</a><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="#resume">Resume ↗</a></div></div></div></div></section>
-    </main><footer className="site-footer"><span>Vishal © 2026</span><div className="footer-links"><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:vishal.design@example.com">Email</a><a href="#resume">Resume</a></div></footer>
+      <section id="contact" className="contact-section"><div className="section-inner"><div className="contact-layout"><div><div className="eyebrow" style={{ color: 'hsl(var(--background) / .55)' }}>Available for good conversations</div><h2 className="contact-title">Let’s <em>connect.</em></h2></div><div className="contact-copy">I’m open to UI/UX opportunities, collaborations, and conversations about design.<div className="contact-links contact-links-primary">
+  <a href="mailto:mallickvishal8@gmail.com">Email ↗</a>
+  <a href="https://www.linkedin.com/in/vishal-mallick/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+  <a href="https://www.behance.net/vishalmallick1" target="_blank" rel="noreferrer">Behance ↗</a>
+  <a href="#resume">Resume ↗</a>
+</div></div></div></div></section>
+    </main><footer className="site-footer"><span>Vishal © 2026</span><div className="footer-links">
+  <a href="https://www.linkedin.com/in/vishal-mallick/" target="_blank" rel="noreferrer">LinkedIn</a>
+  <a href="https://www.behance.net/vishalmallick1" target="_blank" rel="noreferrer">Behance</a>
+  <a href="mailto:mallickvishal8@gmail.com">Email</a>
+  <a href="#resume">Resume</a>
+</div></footer>
   </div>;
 }
 
