@@ -1,0 +1,219 @@
+IMPORTANT: The website is already approved.
+
+DO NOT redesign the website.
+
+Do NOT change:
+- layout
+- content
+- typography
+- navbar
+- project cards
+- About section
+- How I Work section
+- Contact section
+- footer
+- spacing
+- animations
+- responsiveness
+
+I only want to improve the BACKGROUND DESIGN so the website feels more like a polished UI/UX designer portfolio.
+
+CURRENT ISSUE:
+The website feels too plain and too empty because most of the background is simply white.
+
+I do NOT want just a plain grid pattern.
+
+I want a subtle “design canvas / editorial interface” feeling.
+
+==================================================
+BACKGROUND DESIGN DIRECTION
+==================================================
+
+Use a soft warm light-grey / off-white base instead of pure white.
+
+The background should feel slightly richer and more designed.
+
+Add multiple VERY SUBTLE visual elements:
+
+1. MICRO GRID / BLUEPRINT GRID
+- extremely thin lines
+- very low opacity
+- only visible when you look closely
+- should not feel like graph paper
+
+2. SOFT BLUE RADIAL GLOW
+- use the existing website blue/accent tone
+- very soft and blurred
+- place mainly around the hero or selected empty areas
+- opacity should be low
+- should feel atmospheric, not like a gradient background
+
+3. SMALL DESIGN MARKERS
+Add occasional tiny:
+- plus signs
+- crosshair marks
+- alignment markers
+- corner marks
+
+These should appear only in a few places.
+
+Do NOT repeat them everywhere.
+
+They should feel like subtle UI/design-system references.
+
+4. LARGE OUTLINE SHAPES
+In some empty background areas, add very large low-opacity:
+- circles
+- arcs
+- partial rings
+
+They should be barely visible.
+
+Do NOT place them over important text.
+
+5. SECTION GUIDE LINES
+Use very subtle horizontal/vertical guide lines between some major sections.
+
+They should help the page feel structured and editorial.
+
+==================================================
+HERO BACKGROUND
+==================================================
+
+The hero should remain exactly the same in layout.
+
+Behind the hero:
+
+- use a soft off-white base
+- add a faint blueprint grid
+- add one large subtle blue radial glow
+- add one or two tiny design markers
+- optionally add one oversized outline circle/arc in the background
+
+The hero should feel like a designer’s workspace/canvas, but still minimal.
+
+Do NOT reduce readability.
+
+==================================================
+PROJECT SECTION
+==================================================
+
+Keep project cards exactly the same.
+
+The background behind projects should be quieter.
+
+Use:
+- soft neutral background
+- very faint grid or guide lines
+
+Project artwork must remain the strongest visual element.
+
+Do NOT place decorative shapes behind project images if they interfere visually.
+
+==================================================
+ABOUT / PROCESS SECTIONS
+==================================================
+
+Use subtle section markers or guide lines.
+
+Example:
+small crosshair near section number
+or
+thin line extending from section label
+
+Keep it refined.
+
+Do NOT add cards or extra containers.
+
+==================================================
+CONTACT SECTION
+==================================================
+
+Keep the existing dark/navy “Let’s connect” section exactly as it is.
+
+Do NOT change its color.
+
+The transition from the light portfolio background into the dark section should feel clean and intentional.
+
+==================================================
+IMPORTANT VISUAL RULE
+==================================================
+
+The background should feel:
+
+designer-made
+editorial
+modern
+minimal
+slightly experimental
+clean
+premium
+
+It should NOT feel:
+
+busy
+futuristic
+gaming
+cyberpunk
+template-like
+random
+decorative for no reason
+
+==================================================
+OPACITY / SUBTLETY
+==================================================
+
+All background elements must use very low opacity.
+
+The visitor should notice the overall richness of the page before noticing the actual pattern.
+
+The background must NEVER compete with:
+- text
+- project images
+- buttons
+- navigation
+
+==================================================
+RESPONSIVENESS
+==================================================
+
+Make sure this background system works perfectly on:
+
+- large desktop
+- laptop
+- tablet
+- mobile
+
+On mobile:
+- reduce or hide large decorative shapes if needed
+- keep the background simpler
+- avoid visual clutter
+- no horizontal overflow
+
+==================================================
+PERFORMANCE
+==================================================
+
+Use lightweight CSS wherever possible.
+
+Prefer:
+- CSS gradients
+- CSS grid backgrounds
+- pseudo-elements
+- simple CSS shapes
+
+Avoid large background image files.
+
+==================================================
+FINAL RULE
+==================================================
+
+Only improve the background design.
+
+Do not modify any existing section layout or content.
+
+The final result should feel like:
+
+“a minimal UI/UX portfolio placed on a subtle designer’s canvas”
+
+not just a plain white website.

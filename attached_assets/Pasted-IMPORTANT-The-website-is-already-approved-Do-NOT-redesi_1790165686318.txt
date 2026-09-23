@@ -1,0 +1,113 @@
+IMPORTANT: The website is already approved.
+
+Do NOT redesign the website.
+
+Do NOT change:
+- layout
+- content
+- typography
+- project cards
+- navbar
+- admin button
+- About section
+- How I Work
+- Contact section
+- footer
+- spacing
+- responsiveness
+- existing interactions
+
+I only want to improve the BACKGROUND treatment.
+
+CURRENT ISSUE:
+The website feels slightly too plain and too white/minimal.
+
+I want the background to feel more designed and refined, but still very clean and professional.
+
+BACKGROUND DIRECTION:
+
+1. Replace the plain white/light background with a very subtle warm off-white / soft ivory tone.
+
+2. Add a VERY LIGHT visual texture/pattern.
+
+Preferred direction:
+- subtle editorial grid
+OR
+- very fine dot/grid pattern
+OR
+- extremely subtle paper/grain texture
+
+The pattern should:
+- be barely visible
+- use very low opacity
+- never distract from the content
+- never reduce text readability
+- never make project images look busy
+
+IMPORTANT:
+Do NOT add:
+- strong gradients
+- colorful blobs
+- large shapes
+- obvious patterns
+- heavy grain
+- decorative illustrations
+- distracting animations
+
+Keep it sophisticated and minimal.
+
+DESIGN FEEL:
+Think:
+minimal editorial portfolio
++
+slightly tactile background
++
+premium UI/UX designer website
+
+The background should feel intentionally designed, not empty.
+
+LIGHT SECTIONS:
+Use a soft warm off-white base instead of harsh pure white.
+
+Add a subtle grid or micro-dot texture using CSS, preferably without image assets.
+
+The pattern can be slightly more noticeable in large empty areas, but should remain extremely subtle behind text.
+
+PROJECT SECTION:
+Keep the project images and cards visually dominant.
+
+Do not let the background pattern interfere with project artwork.
+
+ABOUT / HOW I WORK:
+Use the same subtle background system for consistency.
+
+CONTACT SECTION:
+Keep the current dark/navy section exactly as it is.
+
+Do NOT change its color or design.
+
+RESPONSIVENESS:
+The background treatment must work properly on:
+- desktop
+- laptop
+- tablet
+- mobile
+
+On smaller screens, simplify/reduce the pattern density if necessary.
+
+PERFORMANCE:
+Use lightweight CSS-based background effects.
+Avoid large background image files.
+
+FINAL RULE:
+Only improve the background treatment.
+
+Do not change anything else.
+
+After making the change, confirm:
+- layout unchanged
+- content unchanged
+- project section unchanged
+- contact section unchanged
+- background now feels more refined and less plain
+- website remains fully responsive

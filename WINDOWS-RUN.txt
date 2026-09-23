@@ -1,0 +1,8 @@
+Visual Portfolio Hub - Windows / VS Code
+
+1. Open this folder in VS Code.
+2. Open Terminal > New Terminal.
+3. Run: pnpm install
+4. Run: pnpm --filter @workspace/vishal-portfolio run dev
+5. Open: http://localhost:5173/
+Stop server: Ctrl+C

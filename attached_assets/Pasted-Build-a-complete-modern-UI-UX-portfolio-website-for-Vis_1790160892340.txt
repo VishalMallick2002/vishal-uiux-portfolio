@@ -1,0 +1,1328 @@
+Build a complete modern UI/UX portfolio website for Vishal.
+
+IMPORTANT CONTEXT:
+
+This is being created again in a new Replit account.
+
+I already have a clear and approved direction for the website.
+
+The website must feel:
+- modern
+- minimal
+- premium
+- editorial
+- highly responsive
+- project-focused
+- suitable for sharing with HR, recruiters, LinkedIn, and potential clients
+
+The portfolio should look professionally designed, but the written content should remain simple, realistic, and appropriate for Vishal’s current level.
+
+Do NOT make the website look like a generic AI-generated portfolio.
+
+Use:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- reusable components
+- clean architecture
+- free-tier-compatible services
+- Vercel-compatible deployment
+- Supabase free tier for authentication, database, and image storage
+
+The complete system should remain usable without requiring any paid CMS or paid hosting.
+
+==================================================
+1. OVERALL VISUAL DIRECTION
+==================================================
+
+Create a clean editorial UI/UX portfolio.
+
+Visual style:
+- mostly black
+- white
+- neutral gray
+- strong typography
+- generous whitespace
+- large project imagery
+- minimal borders
+- clean grid
+- restrained animations
+- premium but simple appearance
+
+Avoid:
+- glassmorphism
+- bright gradients
+- unnecessary shadows
+- excessive rounded cards
+- excessive animations
+- generic SaaS design
+- crowded content
+- fake statistics
+- overly decorative UI
+
+The work should always be the main focus.
+
+==================================================
+2. HEADER / NAVIGATION
+==================================================
+
+Create a clean sticky header.
+
+LEFT:
+A SMALL Admin button.
+
+CENTER / BRAND:
+Vishal.
+
+RIGHT:
+Work
+About
+Resume
+Contact
+
+IMPORTANT ADMIN BUTTON DESIGN:
+
+The Admin button must NOT be large.
+
+It should feel secondary to the portfolio.
+
+Desktop recommendation:
+- approximately 13px–14px text
+- approximately 32px–36px height
+- horizontal padding around 10px–14px
+- subtle 1px border
+- modest border radius
+- no oversized pill
+- no giant icon
+- no external-link arrow
+- no large background area
+
+Text:
+Admin
+
+The button should be clearly visible when Vishal needs it, but it should NOT attract more attention than:
+- Vishal branding
+- navigation
+- project work
+
+Use a subtle hover state.
+
+For example:
+normal:
+light border + neutral text
+
+hover:
+dark background + white text
+
+Do NOT make the Admin button look like the primary CTA of the website.
+
+The button links to:
+
+/admin
+
+If the visitor is not authenticated, redirect to:
+
+/admin/login
+
+MOBILE:
+
+Keep Admin accessible, but still compact.
+
+Do not let the Admin button dominate the mobile navigation.
+
+==================================================
+3. HERO SECTION
+==================================================
+
+Small label:
+
+UI/UX DESIGNER · INDIA
+
+Do NOT use:
+Independent Designer
+
+Main heading:
+
+Useful
+by design.
+
+Supporting copy:
+
+“I create simple and thoughtful digital experiences with a focus on usability and clear design.”
+
+Secondary text if required:
+
+“I enjoy exploring ideas and turning them into simple, user-friendly interfaces.”
+
+CTA:
+
+See selected work
+
+Keep the hero bold, clean, and spacious.
+
+Do not make Vishal sound senior or highly experienced.
+
+At the same time, do NOT repeatedly call him:
+- fresher
+- beginner
+- entry-level
+- junior
+
+The portfolio should simply communicate the work naturally.
+
+==================================================
+4. CONTENT TONE
+==================================================
+
+Use simple, honest, professional language.
+
+Vishal is building his UI/UX career.
+
+The website should NOT exaggerate experience.
+
+Avoid statements such as:
+- years of professional experience
+- expert designer
+- product strategist
+- helping global brands
+- leading complex products
+- shaping global digital products
+- experienced product designer
+
+Do not artificially reduce confidence either.
+
+Tone:
+- clear
+- simple
+- curious
+- confident
+- believable
+- professional
+- human
+
+==================================================
+5. SELECTED WORK / PROJECT SHOWCASE
+==================================================
+
+The homepage project showcase is extremely important.
+
+It should take visual inspiration from Behance.
+
+Do NOT copy Behance branding or UI exactly.
+
+Use the same philosophy:
+
+THE PROJECT IMAGE SHOULD DO MOST OF THE TALKING.
+
+Do not create small generic cards with too much text.
+
+DESKTOP:
+
+Use a strong two-column project grid.
+
+Each project should have:
+- large cover image
+- title
+- short category
+- optional short description
+- subtle project link / arrow
+
+The project image should be significantly larger than the surrounding text.
+
+TABLET:
+
+Use responsive 2-column layout when enough width is available.
+
+MOBILE:
+
+Use one large project per row.
+
+Project covers should remain prominent.
+
+Do not make project images tiny.
+
+PROJECT CARD HOVER:
+
+Keep it subtle:
+- slight image scale
+- slight overlay if required
+- subtle title movement
+- subtle arrow movement
+
+No flashy animations.
+
+The entire project card should be clickable.
+
+==================================================
+6. CURRENT PROJECTS
+==================================================
+
+PROJECT 01
+
+FITO
+
+Fitness Tracking Application
+
+Description:
+
+“A fitness tracking experience designed to make everyday progress easier to understand and follow.”
+
+Tags:
+
+UI/UX · Mobile App · Prototype
+
+
+PROJECT 02
+
+RED WHITE
+
+Food Application
+
+Description:
+
+“A food application focused on simple navigation, clear content, and an easy ordering experience.”
+
+Tags:
+
+UI/UX · Mobile App
+
+
+PROJECT 03
+
+Do NOT invent the third project.
+
+Keep it unpublished until real information is added through the admin panel.
+
+Never display fake portfolio work publicly.
+
+==================================================
+7. ABOUT SECTION
+==================================================
+
+Use this content:
+
+“I’m Vishal, a UI/UX designer who enjoys understanding problems, exploring different ideas, and turning them into simple and user-friendly digital experiences.
+
+My design process usually starts with understanding the requirement, organizing the user flow, creating wireframes, and gradually developing the idea into a clear visual interface and interactive prototype.
+
+I’m always interested in learning new approaches, improving my design thinking, and exploring better ways to solve problems through design.”
+
+Keep it concise and visually clean.
+
+Do not mention fresher or entry-level.
+
+==================================================
+8. SKILLS
+==================================================
+
+Use:
+
+UI Design
+User Flows
+Wireframing
+Prototyping
+UX Research
+Usability Testing
+Responsive Design
+Design Thinking
+
+Do NOT use skill percentages.
+
+==================================================
+9. TOOLS
+==================================================
+
+Use realistic tools:
+
+Figma
+Whimsical
+
+FigJam may also be included if appropriate.
+
+Do not add software simply to make the portfolio look more impressive.
+
+==================================================
+10. DESIGN PROCESS
+==================================================
+
+If a process section is present, use:
+
+01 — Understand
+
+Understand the project requirement, purpose, and expected user journey.
+
+02 — Structure
+
+Organize ideas, user flows, and screen structure.
+
+03 — Design
+
+Create wireframes and develop the visual interface.
+
+04 — Prototype & Refine
+
+Build interactions, review the experience, and improve the design through feedback.
+
+Keep this section concise.
+
+==================================================
+11. CONTACT
+==================================================
+
+Heading:
+
+Let’s connect.
+
+Text:
+
+“I’m open to UI/UX opportunities, collaborations, and conversations about design.”
+
+CTA:
+
+Get in touch
+
+Also provide:
+
+Email
+LinkedIn
+Resume
+
+==================================================
+12. FOOTER
+==================================================
+
+Minimal footer:
+
+Vishal © 2026
+
+LinkedIn
+Email
+Resume
+
+==================================================
+13. ADMIN PANEL
+==================================================
+
+Create a REAL functional admin system.
+
+Route:
+
+/admin
+
+If not authenticated:
+
+/admin/login
+
+Admin login should contain:
+
+Email
+Password
+Sign In
+
+Use Supabase Authentication.
+
+Public users should NEVER be able to:
+- edit projects
+- upload images
+- delete projects
+- change portfolio content
+- publish projects
+
+Only the authenticated admin can manage portfolio content.
+
+==================================================
+14. ADMIN DASHBOARD
+==================================================
+
+After login show:
+
+PORTFOLIO ADMIN
+
+Projects
+
++ Add Project
+
+For each project display:
+
+- small cover thumbnail
+- project title
+- Draft / Published
+- Featured status
+- Edit
+- Preview
+- Publish / Unpublish
+- Delete
+
+Allow project display ordering.
+
+The admin interface should match the same minimal visual language as the website.
+
+Do not over-design the admin.
+
+==================================================
+15. MOST IMPORTANT FEATURE:
+BEHANCE-LIKE PROJECT CREATION EXPERIENCE
+==================================================
+
+THIS SECTION IS EXTREMELY IMPORTANT.
+
+The biggest purpose of the admin panel is to allow Vishal to create beautiful project presentations WITHOUT editing code.
+
+The project editor must behave more like a flexible Behance project editor.
+
+Do NOT create only:
+
+Title
+Description
+Cover Image
+
+That is NOT enough.
+
+I need a flexible visual case-study builder.
+
+Inside each project provide:
+
+CASE STUDY CONTENT
+
++ Add Block
+
+The admin should be able to add blocks such as:
+
+- Heading
+- Subheading
+- Paragraph
+- Single Image
+- Full Width Image
+- Wide Image
+- Multiple Images
+- Two Column Images
+- Three Column Images
+- Image Gallery
+- Image + Text
+- Text + Image
+- Section Break
+- Spacer
+
+Do NOT force projects into one predefined template.
+
+==================================================
+16. IMAGE UPLOAD EXPERIENCE
+==================================================
+
+IMAGE HANDLING MUST RECEIVE SPECIAL ATTENTION.
+
+The project editor should feel image-first, similar to how Behance allows designers to present complete visual projects.
+
+Support:
+
+JPG
+JPEG
+PNG
+WebP
+
+Allow:
+
+- drag-and-drop image upload
+- file picker
+- upload multiple images together
+- preview before/after upload
+- reorder images
+- delete image
+- replace image
+- optional caption
+- alt text
+- image layout selection
+
+When I upload 5, 10, 20 or more UI screens, I should be able to arrange them properly.
+
+Do NOT restrict projects to one or two images.
+
+==================================================
+17. VERY IMPORTANT:
+DO NOT CROP UI SCREENS INCORRECTLY
+==================================================
+
+Project screenshots are UI/UX work.
+
+Their design must remain visible.
+
+For case-study images:
+
+Preserve the ORIGINAL ASPECT RATIO by default.
+
+Do NOT blindly use:
+
+object-fit: cover
+
+for every project image.
+
+That can crop important UI screens.
+
+Use:
+
+object-fit: contain
+
+or natural image dimensions for project content where appropriate.
+
+Cover images on the homepage may use cover cropping intentionally.
+
+But images INSIDE a case study should normally display the complete artwork.
+
+No important parts of:
+- mobile screens
+- user flows
+- wireframes
+- dashboards
+- mockups
+
+should accidentally be cut off.
+
+==================================================
+18. BEHANCE-LIKE IMAGE LAYOUT OPTIONS
+==================================================
+
+For every image block allow the admin to choose layouts.
+
+Examples:
+
+STANDARD
+
+Image sits inside the normal case-study content width.
+
+WIDE
+
+Image uses a larger content width.
+
+FULL WIDTH
+
+Image stretches across the available case-study canvas.
+
+TWO COLUMN
+
+Image 1 | Image 2
+
+THREE COLUMN
+
+Image 1 | Image 2 | Image 3
+
+STACKED
+
+Image
+Image
+Image
+Image
+
+GALLERY
+
+Multiple images displayed together.
+
+This should allow Vishal to create visually rich case studies.
+
+==================================================
+19. IMAGE BLOCK EXAMPLE
+==================================================
+
+Example FITO project:
+
+FITO
+
+[Large Hero / Cover]
+
+OVERVIEW
+
+Text
+
+[Full Width Project Introduction Image]
+
+THE PROBLEM
+
+Text
+
+USER FLOW
+
+[Large User Flow Image]
+
+WIREFRAMES
+
+[Wireframe 1] [Wireframe 2]
+
+[Wireframe 3] [Wireframe 4]
+
+VISUAL DESIGN
+
+Text
+
+FINAL SCREENS
+
+[Full Width Presentation Image]
+
+[Screen Group Image]
+
+[Screen 1] [Screen 2] [Screen 3]
+
+[Large Mockup]
+
+PROTOTYPE
+
+[Prototype Visual]
+
+LEARNINGS
+
+Text
+
+This is only an EXAMPLE.
+
+Do not force every project to use this exact structure.
+
+==================================================
+20. INDIVIDUAL IMAGE CONTROL
+==================================================
+
+Every image should support:
+
+- preview
+- replace
+- delete
+- move/reorder
+- optional caption
+- alt text
+
+For multiple-image blocks allow:
+
+- drag images into new positions
+- move image left/right
+- change layout
+
+Example:
+
+2-column → full width
+
+or
+
+3-column → stacked
+
+without needing code changes.
+
+==================================================
+21. BLOCK REORDERING
+==================================================
+
+All case-study blocks must be reorderable.
+
+Example:
+
+Hero
+Overview
+Problem
+Research
+Flow
+Wireframes
+Final Screens
+Prototype
+Learnings
+
+The admin should be able to drag blocks vertically to change their order.
+
+Changes should immediately be reflected in Preview.
+
+==================================================
+22. BLOCK EDITING UX
+==================================================
+
+When hovering/selecting a block inside Admin, provide simple controls:
+
+Edit
+Move Up
+Move Down
+Duplicate
+Hide
+Delete
+
+Drag-and-drop should also work where practical.
+
+Do not make block controls visible on the public portfolio.
+
+==================================================
+23. PROJECT BASIC INFORMATION
+==================================================
+
+At the top of Add/Edit Project show:
+
+Project Title
+Slug
+Short Description
+Category
+Year
+Project Cover Image
+Thumbnail
+Tags
+Featured ON/OFF
+Draft / Published
+Display Order
+
+Then show:
+
+CASE STUDY CONTENT
+
++ Add Block
+
+==================================================
+24. COVER IMAGE VS CASE-STUDY IMAGES
+==================================================
+
+Treat these separately.
+
+COVER IMAGE:
+
+Used on:
+- homepage
+- Selected Work
+- project thumbnail
+- social preview where appropriate
+
+Cover image may use intentional cropping.
+
+CASE-STUDY IMAGES:
+
+Used inside the actual project.
+
+They should prioritize:
+- original aspect ratio
+- clarity
+- full visibility
+- large presentation
+- sharp UI details
+
+Do NOT apply homepage-thumbnail cropping rules to case-study images.
+
+==================================================
+25. IMAGE QUALITY
+==================================================
+
+The visual quality of UI projects is extremely important.
+
+Do NOT aggressively compress images.
+
+UI text and small interface elements must remain sharp.
+
+Optimize carefully for web while preserving quality.
+
+Use modern formats where useful:
+- WebP
+- AVIF
+
+But retain appropriate quality.
+
+Use responsive image sizes.
+
+Generate thumbnails separately instead of loading giant original files on the homepage.
+
+==================================================
+26. IMAGE LOADING
+==================================================
+
+Use:
+- responsive image sizes
+- lazy loading below the fold
+- appropriate thumbnails
+- optimized delivery
+
+Do NOT lazy-load the main project hero image if it damages the initial experience.
+
+Prevent layout shifts by reserving image dimensions/aspect ratios.
+
+==================================================
+27. PUBLIC PROJECT PAGE
+==================================================
+
+The public case-study page should feel similar to viewing a polished Behance project.
+
+IMPORTANT:
+
+Do NOT make every image look like a card.
+
+Avoid unnecessarily wrapping project images inside:
+- bordered boxes
+- heavy shadows
+- rounded white cards
+
+The case-study itself should feel like a clean visual canvas.
+
+Use:
+- generous whitespace
+- strong headings
+- large images
+- controlled text width
+- intentional spacing
+
+The images should be the main visual experience.
+
+==================================================
+28. PROJECT IMAGE WIDTH
+==================================================
+
+The project page should have two concepts:
+
+TEXT WIDTH
+
+Keep paragraphs comfortably readable.
+
+IMAGE WIDTH
+
+Allow images to become much wider than the text.
+
+Example:
+
+Paragraph width:
+approximately 700–800px
+
+Visual project canvas:
+approximately 1200–1400px depending on screen size
+
+Full-width presentation images may extend further where appropriate.
+
+Do NOT force large portfolio images into the narrow paragraph width.
+
+==================================================
+29. MOBILE PROJECT DISPLAY
+==================================================
+
+Mobile presentation is very important.
+
+On mobile:
+
+- stack multi-column layouts vertically when needed
+- maintain complete UI screenshots
+- do not crop important screens
+- keep appropriate margins
+- do not create horizontal overflow
+- make images large enough to inspect
+- preserve readable text
+- preserve image aspect ratios
+
+If a multi-screen presentation is intentionally one single exported image, display the complete exported image.
+
+==================================================
+30. PROJECT PREVIEW
+==================================================
+
+Inside Admin provide:
+
+Save Draft
+Preview
+Publish
+
+Preview should show the case study exactly as a public visitor will see it.
+
+Preview must include:
+- real typography
+- real spacing
+- selected image layouts
+- project images
+- captions
+- responsive layout
+
+Draft projects must not appear to public users.
+
+==================================================
+31. PUBLISHING FLOW
+==================================================
+
+When the admin clicks Publish:
+
+- project becomes public
+- project appears automatically in Selected Work if configured
+- project gets its public URL
+
+Example:
+
+/projects/fito
+
+When Unpublish is selected:
+
+- remove it from public portfolio
+- retain all project data in Admin
+
+==================================================
+32. FEATURED PROJECTS
+==================================================
+
+Admin should have a Featured toggle.
+
+Featured projects should appear prominently on the homepage.
+
+Allow display ordering.
+
+Example:
+
+1. Fito
+2. Red White
+3. Future Project
+
+==================================================
+33. DATABASE STRUCTURE
+==================================================
+
+Use Supabase.
+
+Suggested structure:
+
+projects
+- id
+- title
+- slug
+- short_description
+- category
+- year
+- cover_image
+- thumbnail
+- tags
+- featured
+- published
+- display_order
+- created_at
+- updated_at
+
+project_blocks
+- id
+- project_id
+- block_type
+- heading
+- text_content
+- layout
+- spacing
+- display_order
+- visible
+- created_at
+- updated_at
+
+project_images
+- id
+- project_id
+- block_id
+- image_url
+- alt_text
+- caption
+- display_order
+- width
+- height
+- created_at
+
+You may improve the schema if necessary.
+
+Keep it simple and maintainable.
+
+==================================================
+34. SUPABASE STORAGE
+==================================================
+
+Create a logical image storage structure.
+
+For example:
+
+portfolio-projects/
+    fito/
+        cover/
+        case-study/
+    red-white/
+        cover/
+        case-study/
+
+Do not place all uploaded project assets into one disorganized folder.
+
+==================================================
+35. SECURITY
+==================================================
+
+Configure Supabase Row Level Security correctly.
+
+PUBLIC:
+
+Can only read:
+- published projects
+- published blocks
+- published project images
+
+ADMIN:
+
+Can:
+- create
+- edit
+- upload
+- delete
+- reorder
+- publish
+- unpublish
+
+Never expose private service keys to client-side code.
+
+Use environment variables.
+
+==================================================
+36. FREE-TIER REQUIREMENT
+==================================================
+
+I have no budget.
+
+The system should work using:
+
+Replit:
+development
+
+GitHub:
+code repository if needed
+
+Vercel:
+free deployment
+
+Supabase:
+free authentication
+free database
+free storage within available limits
+
+Do not introduce:
+- paid CMS
+- paid image service
+- paid authentication
+- mandatory paid plugins
+
+==================================================
+37. RESPONSIVENESS
+==================================================
+
+The complete website must be intentionally responsive.
+
+Desktop:
+large editorial layout
+
+Tablet:
+balanced responsive layout
+
+Mobile:
+single-column where appropriate
+
+Do not simply shrink desktop.
+
+Test:
+- header
+- hero
+- projects
+- about
+- contact
+- admin login
+- admin dashboard
+- project editor
+- galleries
+- public case studies
+
+==================================================
+38. ACCESSIBILITY
+==================================================
+
+Use:
+- semantic headings
+- proper buttons
+- keyboard support
+- visible focus states
+- good contrast
+- alt text support
+- accessible forms
+
+==================================================
+39. DO NOT MAKE THE ADMIN BUTTON LARGE
+==================================================
+
+This requirement is important enough to repeat.
+
+The Admin button must remain SMALL.
+
+It is a utility action.
+
+It is NOT:
+- the primary CTA
+- a major navigation item
+- the hero button
+
+Keep it visually secondary.
+
+Do NOT create a large outlined pill occupying excessive header space.
+
+==================================================
+40. DO NOT CREATE A BASIC IMAGE UPLOADER
+==================================================
+
+This requirement is also important enough to repeat.
+
+I do NOT want:
+
+Upload Project Image
+[Choose File]
+
+and nothing else.
+
+I want a proper visual project composer.
+
+The experience should allow me to build long, image-heavy UI/UX presentations similar to Behance.
+
+I should be able to:
+
+Upload many screens
+↓
+Choose layouts
+↓
+Add headings
+↓
+Add descriptions
+↓
+Add more images
+↓
+Reorder everything
+↓
+Preview
+↓
+Publish
+
+WITHOUT touching source code.
+
+==================================================
+41. FINAL DESIRED WORKFLOW
+==================================================
+
+The workflow should be:
+
+Open website
+
+↓
+
+Click small Admin button
+
+↓
+
+Login
+
+↓
+
+Admin Dashboard
+
+↓
+
+Add Project
+
+↓
+
+Enter basic project details
+
+↓
+
+Upload project cover
+
+↓
+
+Add Heading
+
+↓
+
+Add Text
+
+↓
+
+Upload 1 image
+
+↓
+
+Add another block
+
+↓
+
+Upload 6 UI screens
+
+↓
+
+Choose:
+2 columns / 3 columns / stacked / gallery
+
+↓
+
+Drag and reorder images
+
+↓
+
+Add another full-width presentation image
+
+↓
+
+Add Learnings text
+
+↓
+
+Reorder sections
+
+↓
+
+Preview entire case study
+
+↓
+
+Publish
+
+↓
+
+Project appears automatically on public portfolio
+
+↓
+
+HR clicks the project
+
+↓
+
+HR sees a polished, image-rich Behance-like case study
+
+==================================================
+42. FINAL DESIGN PRINCIPLE
+==================================================
+
+The website should communicate:
+
+Professional visual design
++
+simple believable content
++
+high-quality portfolio projects
++
+easy admin management
+
+Do not make Vishal artificially senior.
+
+Do not repeatedly label Vishal as a fresher.
+
+Let the quality of the projects demonstrate the skill.
+
+==================================================
+43. AFTER BUILDING
+==================================================
+
+When the implementation is ready, explain clearly:
+
+1. What pages were created
+2. How to access /admin
+3. How Admin authentication works
+4. How to create Supabase
+5. What environment variables are required
+6. How to add a new project
+7. How to upload 10+ project images
+8. How image layout selection works
+9. How to reorder images
+10. How to reorder blocks
+11. How Draft works
+12. How Preview works
+13. How Publish works
+14. How Featured projects work
+15. How to deploy to Vercel free tier
+
+Most importantly, confirm:
+
+- Admin button is intentionally small.
+- Project image presentation preserves UI designs properly.
+- Case studies support multiple high-quality images.
+- Case studies are flexible and Behance-inspired.
+- No paid service is required for the basic portfolio.

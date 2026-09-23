@@ -1,0 +1,398 @@
+IMPORTANT: This is an EXISTING portfolio website.
+
+I am happy with the current website.
+
+DO NOT redesign the complete website.
+
+Do NOT change:
+- Hero section
+- Selected Work section
+- Project cards
+- Navigation
+- Admin button
+- How I Work section
+- Contact section
+- Footer
+- Existing colors
+- Existing typography
+- Overall design language
+- Responsive structure of unrelated sections
+
+I only want TWO changes:
+
+1. Improve the ABOUT section
+2. Add a subtle custom mouse cursor interaction
+
+==================================================
+PART 1 — CLEAN UP THE ABOUT SECTION
+==================================================
+
+The current About section feels too text-heavy and visually unbalanced.
+
+The problem is:
+
+- There is too much empty space on the left.
+- A large amount of text is sitting together on the right.
+- The paragraphs feel like plain text was simply placed on the page.
+- Skills and Tools feel crowded underneath.
+- The section does not feel as refined as the rest of the portfolio.
+
+I want the About section to feel:
+- cleaner
+- more intentional
+- modern
+- editorial
+- easy to scan
+- visually balanced
+- consistent with the rest of the portfolio
+
+DO NOT completely redesign it.
+
+Keep the existing visual language of the website.
+
+--------------------------------------------------
+ABOUT SECTION LAYOUT
+--------------------------------------------------
+
+Keep:
+
+02 / ABOUT
+
+But improve the composition.
+
+Use a balanced two-column editorial layout on desktop.
+
+LEFT COLUMN:
+Keep the small section label:
+
+02 / ABOUT
+
+Optionally add a very small supporting phrase such as:
+
+A little about me
+
+Do NOT add unnecessary biography or decorative content.
+
+RIGHT COLUMN:
+Use a strong but simple introduction followed by shorter paragraphs.
+
+Do not make the text area extremely wide.
+
+Use a comfortable reading width.
+
+The right-side content should have more breathing room and clearer hierarchy.
+
+--------------------------------------------------
+ABOUT CONTENT
+--------------------------------------------------
+
+Replace the current long text presentation with this cleaner version:
+
+Main intro:
+
+“I’m Vishal, a UI/UX designer who enjoys turning ideas and everyday problems into simple, user-friendly digital experiences.”
+
+Second paragraph:
+
+“My process usually starts with understanding the requirement, organizing the user flow, and creating wireframes before developing the final interface and prototype.”
+
+Third paragraph:
+
+“I enjoy learning new approaches, exploring design ideas, and improving my work through feedback and iteration.”
+
+IMPORTANT:
+
+Keep the tone:
+- simple
+- honest
+- confident
+- natural
+
+Do NOT use:
+- fresher
+- entry-level
+- junior
+- expert
+- experienced designer
+- years of experience
+
+Do not make the copy sound corporate or AI-generated.
+
+--------------------------------------------------
+TEXT HIERARCHY
+--------------------------------------------------
+
+The first sentence:
+
+“I’m Vishal, a UI/UX designer…”
+
+should feel slightly more important than the remaining paragraphs.
+
+It can use:
+- slightly larger font size
+OR
+- slightly stronger weight
+
+But do NOT make it look like another hero heading.
+
+The remaining paragraphs should be smaller and easy to read.
+
+Use proper vertical spacing between paragraphs.
+
+Do not create one giant text block.
+
+--------------------------------------------------
+SKILLS AND TOOLS
+--------------------------------------------------
+
+Keep Skills and Tools in the About section, but organize them more cleanly.
+
+After the About paragraphs, create a clear separation before Skills / Tools.
+
+For example:
+
+SKILLS
+
+UI Design
+User Flows
+Wireframing
+Prototyping
+UX Research
+Usability Testing
+Responsive Design
+Design Thinking
+
+
+TOOLS
+
+Figma
+Whimsical
+FigJam
+
+Use a clean grid or simple aligned list.
+
+Do NOT make Skills and Tools look like random text scattered below the paragraphs.
+
+Possible desktop layout:
+
+SKILLS                      TOOLS
+
+UI Design                   Figma
+User Flows                  Whimsical
+Wireframing                 FigJam
+Prototyping
+UX Research
+Usability Testing
+Responsive Design
+Design Thinking
+
+Keep good spacing.
+
+Do not use:
+- progress bars
+- skill percentages
+- colorful badges
+- large pills
+- heavy cards
+
+The section must remain minimalist.
+
+--------------------------------------------------
+ABOUT SECTION SPACING
+--------------------------------------------------
+
+Reduce unnecessary empty space.
+
+Do not leave a huge unused blank area on the left.
+
+The composition should feel intentional.
+
+Use generous whitespace, but make it balanced.
+
+The About section should visually feel connected to the rest of the website.
+
+--------------------------------------------------
+RESPONSIVE ABOUT SECTION
+--------------------------------------------------
+
+Desktop:
+- balanced two-column layout
+- readable content width
+- Skills / Tools clearly organized
+
+Tablet:
+- adapt naturally
+
+Mobile:
+- stack everything vertically
+- 02 / ABOUT first
+- intro content next
+- Skills
+- Tools
+
+No horizontal overflow.
+
+Maintain comfortable spacing.
+
+==================================================
+PART 2 — CUSTOM MOUSE CURSOR
+==================================================
+
+Add a subtle modern custom cursor to the website.
+
+IMPORTANT:
+
+Do NOT redesign anything to accommodate the cursor.
+
+The cursor should simply enhance the existing website.
+
+--------------------------------------------------
+CUSTOM CURSOR DESIGN
+--------------------------------------------------
+
+Create a small circular cursor that follows the mouse.
+
+Inside the circle, include a few very small dots.
+
+The cursor should feel:
+- minimal
+- refined
+- smooth
+- premium
+- appropriate for a UI/UX portfolio
+
+NORMAL STATE:
+
+- small circular outline
+- subtle neutral/dark tone
+- tiny dots inside
+- lightweight appearance
+- not distracting
+
+Do NOT make it oversized.
+
+--------------------------------------------------
+HOVER STATE
+--------------------------------------------------
+
+When hovering over interactive elements such as:
+
+- navigation links
+- Admin button
+- project cards
+- project images
+- See selected work
+- Email
+- LinkedIn
+- Resume
+- other clickable buttons or links
+
+the cursor should:
+
+- grow slightly
+- smoothly change to the existing website accent color
+- make the inner dots more visible
+- optionally let the dots spread very slightly
+- transition smoothly
+
+The interaction should feel polished, not flashy.
+
+--------------------------------------------------
+PROJECT HOVER CURSOR
+--------------------------------------------------
+
+When hovering over a project card/image, the custom cursor can become slightly more noticeable.
+
+Optional:
+
+Display a very small:
+
+VIEW
+
+inside the cursor while hovering over a project.
+
+Only do this if it remains clean and readable.
+
+Do NOT make the cursor large.
+
+Do NOT cover important project visuals.
+
+--------------------------------------------------
+TECHNICAL REQUIREMENTS
+--------------------------------------------------
+
+- Smooth mouse-follow movement
+- Use requestAnimationFrame or another lightweight animation method
+- pointer-events: none
+- high enough z-index
+- no click interference
+- no scroll lag
+- no performance issues
+
+The custom cursor must never prevent:
+- clicking
+- text selection
+- scrolling
+- form interaction
+
+--------------------------------------------------
+DEFAULT CURSOR
+--------------------------------------------------
+
+On desktop with a mouse:
+
+Hide the normal system cursor only when the custom cursor is active and working correctly.
+
+For:
+- text fields
+- admin forms
+- content-editable areas
+
+preserve normal usability if necessary.
+
+--------------------------------------------------
+MOBILE / TOUCH
+--------------------------------------------------
+
+Do NOT show the custom cursor on:
+
+- phones
+- touch-only tablets
+- touch devices without a mouse
+
+The website should behave normally there.
+
+--------------------------------------------------
+ACCESSIBILITY
+--------------------------------------------------
+
+Respect:
+
+prefers-reduced-motion
+
+If reduced motion is enabled:
+- remove the delayed/floating movement
+OR
+- disable the custom cursor animation
+
+==================================================
+VERY IMPORTANT FINAL INSTRUCTION
+==================================================
+
+ONLY make these two changes:
+
+1. Clean and improve the About section
+2. Add the custom cursor
+
+DO NOT change the rest of the website.
+
+After completing the changes, confirm:
+
+- Hero remained unchanged
+- Project section remained unchanged
+- Navigation remained unchanged
+- How I Work remained unchanged
+- Contact remained unchanged
+- Footer remained unchanged
+- About section is cleaner and more balanced
+- Custom cursor works only on desktop/mouse devices

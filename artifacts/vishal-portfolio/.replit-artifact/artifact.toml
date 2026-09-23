@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Vishal Portfolio"
+description = "A modern editorial UI/UX portfolio for Vishal, with selected work, public case studies, and a visual project editor for building image-rich presentations."
+version = "1.0.0"
+id = "artifacts/vishal-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20844
+
+[services.development]
+run = "pnpm --filter @workspace/vishal-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/vishal-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/vishal-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20844"
+BASE_PATH = "/"

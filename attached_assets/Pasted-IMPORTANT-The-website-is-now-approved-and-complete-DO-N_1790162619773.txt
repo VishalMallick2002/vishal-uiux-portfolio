@@ -1,0 +1,312 @@
+IMPORTANT: The website is now approved and complete.
+
+DO NOT redesign or change anything else.
+
+Do NOT change:
+- Website layout
+- Hero section
+- About section
+- Project section
+- How I Work section
+- Contact / Let’s Connect section
+- Header / navigation
+- Admin button
+- Footer
+- Typography
+- Existing colors
+- Content
+- Spacing
+- Project images
+- Existing animations
+
+I ONLY want you to improve the existing CUSTOM CURSOR and make sure the complete website remains perfectly responsive.
+
+==================================================
+1. CURRENT CURSOR PROBLEM
+==================================================
+
+The custom cursor currently works well on the light parts of the website.
+
+However, when the cursor enters the dark navy “Let’s connect” section, it almost disappears because its color is too similar to the section background.
+
+Fix ONLY this issue and improve the cursor slightly.
+
+Do NOT change the color or design of the “Let’s connect” section.
+
+The cursor must adapt to the background instead.
+
+==================================================
+2. CURSOR SHOULD ADAPT TO LIGHT AND DARK SECTIONS
+==================================================
+
+LIGHT SECTIONS:
+
+On the existing light/off-white website background:
+
+Use:
+- subtle dark/navy cursor outline
+- small accent center dot
+- tiny decorative dots
+
+It should remain elegant and visible.
+
+
+DARK SECTION:
+
+When the cursor enters the dark “Let’s connect” area:
+
+Automatically switch the cursor appearance.
+
+Use:
+- warm off-white / cream outer ring
+- small warm accent-colored center dot
+- tiny light decorative dots
+
+The cursor should clearly stand out against the navy background.
+
+Do NOT use the same navy/dark color on a navy background.
+
+The transition between light-section cursor and dark-section cursor should be smooth.
+
+==================================================
+3. MAKE THE CURSOR SLIGHTLY MORE CHARMING
+==================================================
+
+Keep it minimal and professional, but give it a small playful personality.
+
+Normal cursor:
+
+- small circular outline
+- one tiny center dot
+- 2–3 very small decorative dots around/inside it
+- clean and lightweight
+
+The decorative dots may gently shift or rotate by a very small amount while the mouse moves.
+
+IMPORTANT:
+The animation should be subtle.
+
+It should NOT look like:
+- particles
+- gaming cursor
+- neon cursor
+- large animated blob
+- cartoon effect
+
+Think:
+
+minimal + cute + premium UI/UX portfolio.
+
+==================================================
+4. HOVER EFFECT
+==================================================
+
+When hovering over clickable elements such as:
+
+- Work
+- About
+- Resume
+- Contact
+- Admin
+- Project cards
+- Project images
+- See selected work
+- Email
+- LinkedIn
+- Resume link
+
+the cursor should:
+
+- grow slightly
+- make the center dot slightly more visible
+- let the tiny decorative dots spread slightly
+- use a smooth spring-like transition
+
+Keep it refined.
+
+Do NOT make it dramatically bigger.
+
+==================================================
+5. PROJECT CARD HOVER
+==================================================
+
+When hovering over a project image/card:
+
+The cursor may become slightly larger and optionally show:
+
+VIEW
+
+in very small text inside the circle.
+
+Only use “VIEW” if it remains:
+- clean
+- readable
+- subtle
+
+Do not make it oversized.
+
+==================================================
+6. CONTACT SECTION HOVER
+==================================================
+
+This is especially important.
+
+Inside the dark “Let’s connect” section:
+
+The cursor must always remain clearly visible.
+
+Use a light/cream cursor treatment there.
+
+When hovering over:
+- Email
+- LinkedIn
+- Resume
+
+the cursor can use a small warm accent color for the inner dot or decorative dots.
+
+Keep the outer ring visible.
+
+==================================================
+7. SMOOTH CURSOR MOVEMENT
+==================================================
+
+Keep the cursor movement smooth and slightly fluid.
+
+Use lightweight animation such as requestAnimationFrame.
+
+Do not create:
+- lag
+- stuttering
+- delayed clicking
+- scroll performance issues
+
+Use:
+pointer-events: none
+
+The custom cursor must never block clicks.
+
+==================================================
+8. CURSOR SIZE
+==================================================
+
+Do NOT make the cursor too large.
+
+Suggested direction:
+
+Normal:
+approximately 24–30px
+
+Interactive hover:
+approximately 36–44px
+
+You can adjust slightly if required to fit the existing website proportions.
+
+Keep it elegant.
+
+==================================================
+9. RESPONSIVENESS — VERY IMPORTANT
+==================================================
+
+The website must remain SUPER RESPONSIVE.
+
+Do not break any existing responsive layout while changing the cursor.
+
+Check the website at:
+
+- Large desktop
+- Standard laptop
+- Small laptop
+- Tablet landscape
+- Tablet portrait
+- Large mobile
+- Standard mobile
+- Small mobile
+
+The existing design should remain visually the same.
+
+==================================================
+10. TOUCH DEVICES
+==================================================
+
+Do NOT show the custom cursor on touch-only devices.
+
+Disable it automatically for:
+- smartphones
+- touch tablets
+- devices without a fine pointer
+
+Use a media query / capability check such as:
+
+pointer: fine
+
+and
+
+hover: hover
+
+Only activate the custom cursor where a real mouse/trackpad is available.
+
+==================================================
+11. HYBRID DEVICES
+==================================================
+
+On devices that support both touch and mouse:
+
+Only show the custom cursor when an appropriate fine pointer is available.
+
+Do not create cursor artifacts after touch interaction.
+
+==================================================
+12. REDUCED MOTION
+==================================================
+
+Respect:
+
+prefers-reduced-motion
+
+For users who prefer reduced motion:
+
+- remove delayed movement
+- remove decorative dot animation
+- or fall back to a simpler cursor
+
+==================================================
+13. DO NOT AFFECT ADMIN INPUTS
+==================================================
+
+Inside admin forms, login inputs, text inputs, textareas, or content-editable fields:
+
+Maintain proper usability.
+
+If necessary, allow the normal text/I-beam cursor when editing text.
+
+Do not make the custom cursor interfere with:
+- typing
+- text selection
+- drag and drop
+- uploading images
+- admin controls
+
+==================================================
+14. IMPORTANT FINAL RULE
+==================================================
+
+The website is already finished.
+
+ONLY improve:
+
+1. Custom cursor visibility on the dark “Let’s connect” section
+2. Make the cursor slightly more attractive/cute while staying minimal
+3. Ensure the cursor adapts correctly between light and dark backgrounds
+4. Verify that the complete website remains responsive on every device
+
+DO NOT change anything else.
+
+After completing the change, confirm:
+
+- No website layout was changed
+- No content was changed
+- No section design was changed
+- Cursor is clearly visible on the dark contact section
+- Cursor automatically adapts between light and dark areas
+- Cursor is disabled appropriately on touch devices
+- Website remains fully responsive
