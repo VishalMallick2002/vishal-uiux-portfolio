@@ -532,7 +532,7 @@ function PublicHeader() {
 }
 
 function TypingEyebrow() {
-  const fullText = 'VISHAL MALLICK · UI/UX DESIGNER · INDIA';
+  const fullText = 'VISHAL · UI/UX DESIGNER · INDIA';
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
